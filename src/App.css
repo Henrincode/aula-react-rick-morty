@@ -7,31 +7,3 @@ body {
   background-color: rgb(26, 26, 26);
   /* Define a cor de fundo do elemento */
 }
-
-.card {
-  color: white;
-  /* Define a cor do texto */
-  font-family: sans-serif;
-  /* Estilo da fonte */
-  border: 1px solid white;
-  /*Borda branca pequena*/
-  border-radius: 10px;
-  /* Define o arredondamento da borda do elemento */
-  text-align: center;
-  /* Alinhamento do texto */
-  width: 20%;
-  /* Tamanho horizontal do elemento */
-  margin: 0 auto;
-  /* margin 0 pra cima e pra baixo e auto pra esquerda e pra direita, isso faz a div ficar centralizada*/
-  padding: 10px;
-  /* Espaçamento interno do elemento */
-  box-shadow: 5px 6px 0 white;
-  /*sombra da caixa*/
-}
-
-.card img {
-  width: 100%;
-  /* largura de 100% da imagem*/
-  border-radius: 8px;
-  /* Cantos arredondados */
-}
