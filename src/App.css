@@ -8,3 +8,10 @@ body {
   /* Define a cor de fundo do elemento */
   
 }
+
+.lista {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
