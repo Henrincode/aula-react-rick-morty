@@ -1,33 +1,23 @@
-import './App.css'
-import Card from './Card'
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import "./App.css";
 
 function App() {
-  const item1 = {
-    nome: 'Rick Sanches',
-    foto: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg'
-  }
-  const item2 = {
-    nome: 'Morty Smith',
-    foto: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg'
-  }
-  const item3 = {
-    nome: 'Summer Smith',
-    foto: 'https://rickandmortyapi.com/api/character/avatar/3.jpeg'
-  }
-
-  const personagens = [item1, item2, item3]
-
   return (
     <>
-      <div className='lista'>
-        {
-          personagens.map(function (umPersonagem) {
-            return <Card info={umPersonagem} />
-          })
-        }
-      </div>
+      <BrowserRouter basename="/">
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="/sobre" element={<Sobre />} />
+            {/* <Route path="*" element={<NoPage />} /> */}
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
